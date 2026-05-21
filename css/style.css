@@ -1,0 +1,131 @@
+* {
+    line-height: 1.6; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body { 
+    background: #eef;
+    margin: 0; 
+    padding: 0; 
+}
+
+header, footer { 
+    background: #c22323; 
+    color: #eef; 
+    padding: 1rem; 
+    text-align: center;
+}
+
+header > a:hover, footer > a:hover {
+    color: #999
+}
+
+.main-header {
+    border-radius: 0 0 20px 20px;
+}
+
+.header-noticia {
+    border-radius: 20px;
+}
+
+footer {
+    border-radius: 20px 20px 0 0;
+}
+
+nav > a { 
+    color: #eef; 
+    margin: 0 10px; 
+    text-decoration: none;
+}
+
+main { 
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 0 20px;
+}
+
+article {
+    margin-bottom: 40px; 
+}   
+
+aside {
+    background: #ddf; 
+    padding: 15px; 
+    margin-top: 20px; 
+    border-left: 4px solid #333; 
+    border-radius: 10px;
+}
+
+figure { 
+    text-align: center; 
+    background: #ddf; 
+    border-radius: 10px;
+    padding: 10px; 
+    margin: 20px 0;
+}
+
+figure img {
+    border-radius: 10px;
+}
+
+figcaption { 
+    font-size: 0.9rem; 
+    color: #555; 
+}
+
+a {
+    text-decoration: none;
+    color: #c22323;
+    user-select: none;
+}
+
+a:hover {
+    color: #cd5c5c
+}
+
+a > img:hover {
+    opacity: 90%;
+}
+
+div#main-title-box {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+div#main-title-box hr {
+    flex: 1;
+    border: none;
+    background-color: #000;
+    height: 1px;
+}
+
+details {
+    user-select: none;
+    padding: 1%;
+    border-radius: 10px;
+    background: #ddf;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+summary {
+    list-style: none;
+    cursor: default;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 8px;
+
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
